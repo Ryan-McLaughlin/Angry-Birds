@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 // press f12 to bring up external, then shift+f12 for more
-
+// 3:45 ~ https://www.youtube.com/watch?v=QplEeEAJxck
 public class GameManager : MonoBehaviour
 {
     // once set it will not change - singleton pattern
@@ -101,6 +101,7 @@ public class GameManager : MonoBehaviour
         // use .SetActive for GameObject ~ disables the entire game object
 
         _restartScreenObject.SetActive(true);
+
         // use .enabled for Script ~ disables just the script
         _slingShotHandler.enabled = false;
     }
@@ -108,6 +109,11 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         Debug.Log("LOSE GAME");
+
+        // turn back on the sling shot handler
+        _slingShotHandler.enabled = true;
+        
+        // reload the current scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

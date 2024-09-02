@@ -161,6 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae5fab7a02fce6645bfcdc0b1ddcd947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 3
+  _maxHealth: 4.86
   _damageThreshold: 0.2
   _enemyDeathParticle: {fileID: 1083088670760335356, guid: 25e075ad63acf44409c0cb42e6af29ff, type: 3}
